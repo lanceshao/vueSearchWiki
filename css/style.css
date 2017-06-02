@@ -1,0 +1,83 @@
+#app {
+  width:600px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  font-size: 40px;
+}
+
+input{
+  height: 30px;
+  width:485px;
+  font-size: 20px;
+  margin-top: 5px;
+  padding-left: 5px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+button{
+  height: 35px;
+  font-size: 18px;
+  font-weight: 100;
+  background-color: #555;
+  color: white;
+  border: none;
+  width: 100px;
+  float: right;
+  margin-top: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+  border: #eee solid 1px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+ul li button {
+  float: right;
+  background-color: #dd1137;
+  color: white;
+  width:30px;
+  height:30px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+ul h3 {
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 30px;
+  color: #2b2a2d;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #1089e0;
+}
+
+ul li a:active {
+  color: #1089e0;
+}
