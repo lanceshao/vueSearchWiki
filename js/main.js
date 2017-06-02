@@ -5,7 +5,8 @@ var app = new Vue({
     title:'Search X',
     newItem: '',
     btnText: 'Add Item',
-    blankText: 'Please add an item for search',
+    blankText: 'Please add above for search',
+    clear: 'CLEAR ALL',
     items: [
 
     ]
@@ -14,7 +15,7 @@ var app = new Vue({
   methods:{
     addItem(value){
       const newEntry = {
-        text: this.newItem,
+        text: this.newItem
       }
 
       if(this.newItem.length) {
@@ -24,6 +25,9 @@ var app = new Vue({
     },
     deleteItem(index){
       this.items.splice(index,1)
+    },
+    deleteAll(){
+      this.items.splice(0,this.items.length)
     }
   },
 

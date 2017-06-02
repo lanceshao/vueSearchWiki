@@ -89,7 +89,7 @@ ul li a:active {
 
 .blankText {
   padding-left: 5px;
-  color: #666;
+  color: #1089e0;
   font-size: 20px;
 }
 
@@ -99,4 +99,12 @@ ul li a:active {
 
 .google {
   margin-left: 20px;
+}
+
+button.allClear {
+  width: 100%;
+  background-color: #e80659;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
 }

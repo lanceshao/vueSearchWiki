@@ -9,8 +9,10 @@
   <body>
     <div id="app">
       <header>{{ title }}</header>
-      <input type="text" placeholder="Enter here..." v-model='newItem' v-on:keyup.enter="addItem">
+
+      <input type="text" maxlength="25" placeholder="Enter here..." v-model='newItem' v-on:keyup.enter="addItem">
       <button v-on:click="addItem">{{ btnText }}</button>
+
       <template v-if="items.length > 0">
         <ul>
           <li v-for="(item,index) in items">
@@ -22,6 +24,9 @@
         </ul>
       </template>
       <p class="blankText" v-else>{{ blankText }}</p>
+
+      <button v-if="items.length > 0" class="allClear" @click="deleteAll">{{ clear }}</button>
+
     </div>
 
 
