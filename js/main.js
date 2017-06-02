@@ -2,8 +2,10 @@ var app = new Vue({
   el:"#app",
 
   data: {
-    title:'Search In Wikipedia',
+    title:'Search X',
     newItem: '',
+    btnText: 'Add Item',
+    blankText: 'Please add an item for search',
     items: [
 
     ]
@@ -31,15 +33,20 @@ var app = new Vue({
       value = value.toString();
       return value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
     },
+    lowercase(value){
+      if(!value) return '';
+      value = value.toString();
+      return value.toLowerCase();
+    },
     url(value){
       if(!value) return '';
       value = value.toString();
       return 'https://en.wikipedia.org/wiki/' + value.toLowerCase();
     },
-    lowercase(value){
+    google(value){
       if(!value) return '';
       value = value.toString();
-      return value.toLowerCase();
+      return 'https://www.google.com.hk/?gws_rd=ssl#safe=strict&q=' + value.toLowerCase();
     }
   }
 })

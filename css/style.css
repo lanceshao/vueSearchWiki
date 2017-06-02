@@ -86,3 +86,17 @@ ul li a {
 ul li a:active {
   color: #1089e0;
 }
+
+.blankText {
+  padding-left: 5px;
+  color: #666;
+  font-size: 20px;
+}
+
+.wiki {
+  margin-left: 5px;
+}
+
+.google {
+  margin-left: 20px;
+}
