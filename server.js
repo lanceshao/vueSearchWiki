@@ -32,4 +32,6 @@ var server = http.createServer(function(req,res){
   }
 });
 
-server.listen(3800);
+server.listen(3800, function(){
+  console.log('Server running at http://localhost:' + server.address().port);
+});
